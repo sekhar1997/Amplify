@@ -1,4 +1,3 @@
-import { User } from 'src/app/Users';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -14,13 +13,13 @@ export class UserService {
   getUsers() {
     return this.httpClient.get(`${BASE_URL}/users`);
   }
-  delUser(val: User) {
-    const data: User = {
+  delUser(val: any) {
+    const data: any = {
       body: val,
     };
     return this.httpClient.delete(`${BASE_URL}/users`, data);
   }
-  addUser(val: User) {
+  addUser(val: any) {
     return this.httpClient.post(`${BASE_URL}/users`, val);
   }
 }
