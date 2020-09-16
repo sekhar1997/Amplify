@@ -1,0 +1,28 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.userform {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.formDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.userform-width {
+  width: 100%;
+}
