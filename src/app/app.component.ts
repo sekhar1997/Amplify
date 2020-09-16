@@ -5,13 +5,13 @@ import {
   MAT_DIALOG_DATA,
 } from '@angular/material/dialog';
 import { UserService } from 'src/app/user.service';
-import { User } from 'src/app/Users';
+// import { User } from 'src/app/Users';
 
-export interface user {
-  name: string;
-  id: number;
-  email: boolean;
-}
+// export interface user {
+//   name: string;
+//   id: number;
+//   email: boolean;
+// }
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   id: string;
   name: string;
   email: string;
-  user: User;
+  user: {};
   displayedColumns = ['Name', 'Email', 'id', 'action'];
   dataSource: any;
 

@@ -1,4 +1,3 @@
-import { user } from './app.component';
 import { User } from 'src/app/Users';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -21,7 +20,7 @@ export class UserService {
     };
     return this.httpClient.delete(`${BASE_URL}/users`, data);
   }
-  addUser(val: user) {
+  addUser(val: User) {
     return this.httpClient.post(`${BASE_URL}/users`, val);
   }
 }
